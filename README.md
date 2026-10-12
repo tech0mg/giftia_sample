@@ -94,8 +94,8 @@ npm start                               # http://localhost:3000
 
 | アプリ | 名前の例 | ランタイム | 起動のしかた |
 | --- | --- | --- | --- |
-| 画面 | `team01-web` | Node.js 22 LTS | `npm start`（`next start`。既定のまま） |
-| API | `team01-api` | Python 3.12 | スタートアップコマンドに `gunicorn -w 2 -k uvicorn.workers.UvicornWorker --bind=0.0.0.0 --timeout 120 main:app` |
+| 画面 | `team01-web` | Node.js 24 LTS | スタートアップコマンドに `node node_modules/next/dist/bin/next start`（`npm start` のままだと、デプロイの zip で `node_modules/.bin/next` のリンクが壊れて起動できない） |
+| API | `team01-api` | Python 3.14 | スタートアップコマンドに `gunicorn -w 2 -k uvicorn.workers.UvicornWorker --bind=0.0.0.0 --timeout 120 main:app` |
 
 それぞれのアプリの「環境変数（アプリ設定）」に、次の値を入れます。**`.env` や `.env.local` はアップロードしません。**
 

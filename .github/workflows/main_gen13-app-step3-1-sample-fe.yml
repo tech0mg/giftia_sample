@@ -3,6 +3,9 @@
 #
 # ビルドはこの GitHub Actions の上で行う。Azure 側ではビルドしない
 #   （Web アプリの環境変数に SCM_DO_BUILD_DURING_DEPLOYMENT=true を入れない。入れると NEXT_PUBLIC_API_URL のないビルドで上書きされる）
+# Azure 側のスタートアップ コマンド: node node_modules/next/dist/bin/next start
+#   （npm start のままだと落ちる。zip にすると node_modules/.bin/next のリンクが実体のコピーになり、
+#     コピー先から ../server/require-hook を探せないため。本体を直接起動する）
 # NEXT_PUBLIC_API_URL は、リポジトリの Settings → Secrets and variables → Actions → Variables に入れる
 #   値は API の Web アプリの URL（末尾に / や /api を付けない）。ビルドのときに画面のコードへ埋め込まれる
 

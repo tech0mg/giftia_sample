@@ -1,0 +1,6 @@
+fastapi>=0.115
+uvicorn>=0.30
+python-dotenv>=1.0
+pymysql>=1.1
+openai>=1.40      # LLMで推薦理由を作るとき（任意）。使わなければ入れなくても動く
+gunicorn>=22      # Azure App Service で動かすとき（5周目。uvicorn のワーカーを束ねる）

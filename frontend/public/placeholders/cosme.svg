@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="0 0 240 240" role="img" aria-label="コスメ（仮画像）">
+  <rect width="240" height="240" fill="#f6e1e6"/>
+  <rect x="70" y="70" width="100" height="80" rx="8" fill="none" stroke="#8a2f4a" stroke-width="6"/>
+  <path d="M70 100h100M120 70v80" stroke="#8a2f4a" stroke-width="6"/>
+  <text x="120" y="190" text-anchor="middle" font-family="sans-serif" font-size="22" fill="#8a2f4a">コスメ</text>
+  <text x="120" y="215" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#8a2f4a" opacity="0.7">仮画像</text>
+</svg>
